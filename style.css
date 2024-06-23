@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #00224D;
+    
+}
+
+h1{
+    color: rgb(13, 6, 13);
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+    
+    
+}
+
+.main{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: rgba(229, 240, 237, 0.1);
+   
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.day, .night{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.toggle-Btn, .toggle-Btn2{
+    width: 10rem;
+    height: 5rem;
+    border-radius:  190px;
+    /* background-color: rgb(238, 46, 126); */
+    background-image: url("images/day.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.toggle-Btn2{
+    background-image: url("images/night.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.myBtn, .myBtn1{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border-style: none;
+    margin: 0.5rem;
+    background-color: #FFC94A;
+}
+
+.myBtn1{
+    background-color: #fffefe;
+}
+
+
+  .addTransition{
+    border-radius: 50%;
+    margin: 0rem;
+    overflow: hidden;
+    transition: all 0.2s linear; 
+    translate: 5rem 0;
+    margin: 0.5rem;
+
+  } 
+
+
+
+ .addTransition1{
+    border-radius: 50%;
+    box-shadow: 8px 8px 0 0.5px #fffefe;
+    margin: 0;
+    overflow: hidden;
+    background-color:  transparent;
+    transition: all 0.2s linear; 
+    translate:4rem 0;
+    top: -4rem;
+ } 
+
+@media(width <700px){
+    h1{
+    font-size: 200;
+    }
+
+}
